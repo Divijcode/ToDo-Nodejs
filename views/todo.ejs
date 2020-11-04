@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+
+    <div class="box" id="heading">
+      <h1>TO-DO List</h1>
+    </div>
+<div class="box">
+    <% for(var i=0;i<list.length;i++){ %>
+
+      <div class="item">
+        <input type="checkbox" >
+        <p><%= list[i] %></p>
+      </div>
+
+  <%  } %>
+
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newitem" placeholder="New Item" required>
+    <button type="submit" class="button" name="button">+</button>
+  </form>
+
+</div>
+<center><p class="marko mt-4 mb-3 text-white"><span class="span">&copy;</span> divijologist</p></center>
+</body>
+</html>
